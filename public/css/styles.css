@@ -1,0 +1,25 @@
+/* Botón Editar */
+table .btn-warning {
+  background-color: #00ff15;
+  border-color: #00ff15;
+  color: #ffffff;
+}
+
+table .btn-warning:hover {
+  background-color: #00ff15;
+  border-color: #00ff15;
+  color: #000000;
+}
+
+/* Botón Eliminar */
+table .btn-danger {
+  background-color: #e60000;
+  border-color: #cc0000;
+  color: #ffffff;
+}
+
+table .btn-danger:hover {
+  background-color: #cc0000;
+  border-color: #b30000;
+  color: #000000;
+}
