@@ -33,6 +33,10 @@
             @endforeach
         </select>
     </div>
+    <div class="mb-3">
+        <label class="form-label">Tipo Facturacion</label>
+        <textarea name="facturacion" class="form-control" required>{{ $caso->facturacion }}</textarea>
+    </div>
     <button type="submit" class="btn btn-primary">Actualizar</button>
     <a href="{{ route('casos.index') }}" class="btn btn-secondary">Cancelar</a>
 </form>

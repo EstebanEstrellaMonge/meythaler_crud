@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Caso extends Model
 {
-    protected $fillable = ['titulo', 'descripcion', 'estado', 'usuario_id'];
+    protected $fillable = ['titulo', 'descripcion', 'estado', 'usuario_id', 'facturacion'];
 
     public function usuario()
     {

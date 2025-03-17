@@ -27,6 +27,8 @@ class CasoController extends Controller
             'descripcion' => 'required',
             'estado' => 'required',
             'usuario_id' => 'required',
+            'facturacion' => 'required',
+            
         ]);
 
         try {
@@ -53,6 +55,7 @@ class CasoController extends Controller
             'descripcion' => 'required',
             'usuario_id' => 'required|exists:usuarios,id',
             'estado' => 'required|in:abierto,en proceso,cerrado',
+            'facturacion' => 'required',
         ]);
 
         $caso->update($request->all());

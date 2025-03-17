@@ -28,6 +28,10 @@
         <label class="form-label">Usuario</label>
         <input type="text" name="usuario_id" class="form-control" required>
     </div>
+    <div class="mb-3">
+        <label class="form-label">Tipo Facturacion</label>
+        <input type="text" name="facturacion" class="form-control" required>
+    </div>
     <button type="submit" class="btn btn-primary">Guardar</button>
     <a href="{{ route('casos.index') }}" class="btn btn-secondary">Cancelar</a>
 </form>

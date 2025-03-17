@@ -15,8 +15,8 @@ class CreateCasosTable extends Migration
             $table->enum('estado', ['abierto', 'en proceso', 'cerrado'])->default('abierto');
             $table->unsignedInteger('usuario_id'); // Asegurar que solo haya una declaración de usuario_id
             $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
-            $table->timestamps();
             $table->string('facturacion');
+            $table->timestamps();            
         });
     }
 

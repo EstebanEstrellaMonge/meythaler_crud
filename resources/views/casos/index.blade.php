@@ -22,6 +22,7 @@
             <th>Descripción</th>
             <th>Estado</th>
             <th>Usuario</th>
+            <th>Tipo Facturacion</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -33,6 +34,7 @@
             <td>{{ $caso->descripcion }}</td>
             <td>{{ ucfirst($caso->estado) }}</td>
             <td>{{ $caso->usuario->nombre }}</td>
+            <td>{{ $caso->facturacion}}</td>
             <td>
                 <a href="{{ route('casos.edit', $caso->id) }}" class="btn btn-sm btn-warning">Editar</a>
                 <form action="{{ route('casos.destroy', $caso->id) }}" method="POST" style="display:inline;">
